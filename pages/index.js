@@ -16,15 +16,15 @@ function GlobalStyle() {
                 }
 
                 /* App fit height */
-                html, body, #_next {
+                html, body, #__next {
                     min-height: 100vh;
                     display: flex;
                     flex: 1;
                 }
-                #_next {
+                #__next {
                     flex: 1;
                 }
-                #_next > * {
+                #__next > * {
                     flex: 1;
                 }
                 /* App fit height */

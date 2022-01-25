@@ -113,7 +113,7 @@ export default function PaginaInicial() {
                             fullWidth
                             textFieldColors={{
                                 neutral: {
-                                    textColor: appConfig.theme.colors.neutrals[100],
+                                    textColor: appConfig.theme.colors.neutrals[999],
                                     mainColor: appConfig.theme.colors.neutrals[900],
                                     mainColorHighlight: appConfig.theme.colors.primary[900],
                                     backgroundColor: appConfig.theme.colors.neutrals[100],

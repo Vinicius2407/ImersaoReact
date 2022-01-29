@@ -68,7 +68,7 @@ export default function PaginaInicial() {
                     {/* Formulário */}
                     <Box
                         as="form"
-                        onSubmit={function(infoEvent) {
+                        onSubmit={function (infoEvent) {
                             infoEvent.preventDefault();
                             router.push("/chat");
                             //window.location.href = "/chat"
@@ -84,7 +84,9 @@ export default function PaginaInicial() {
                         </Text>
 
 
-                        <input 
+
+
+                        <TextField
                             type="text"
                             value={username}
                             onChange={function Handler(event) {
@@ -95,19 +97,16 @@ export default function PaginaInicial() {
                                 //através do react
                                 setUsername(value);
                             }}
-                        />
-
-                        {/* <TextField
                             fullWidth
                             textFieldColors={{
                                 neutral: {
                                     textColor: appConfig.theme.colors.neutrals[999],
-                                    mainColor: appConfig.theme.colors.neutrals[900],
+                                    mainColor: appConfig.theme.colors.neutrals[600],
                                     mainColorHighlight: appConfig.theme.colors.primary[900],
                                     backgroundColor: appConfig.theme.colors.neutrals[100],
                                 },
                             }}
-                        /> */}
+                        />
                         <Button
                             type='submit'
                             label='Entrar'
@@ -152,7 +151,7 @@ export default function PaginaInicial() {
                                 color: appConfig.theme.colors.neutrals[200],
                                 backgroundColor: appConfig.theme.colors.neutrals[900],
                                 padding: '3px 10px',
-                                borderRadius: '1000px'
+                                borderRadius: '1000px',
                             }}
                         >
                             {username}
